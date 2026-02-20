@@ -7,14 +7,14 @@ export default function TrainerCard() {
     <Box
       sx={{
         backgroundColor: theme.palette.primary.main,
-        maxWidth: 450,
-        minHeight: 700,
+        minHeight: 540,
         borderRadius: 8,
         position: "relative",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
-        paddingTop: 4,
+        paddingX: 4,
+        paddingTop: 6,
       }}
     >
       <Box>
@@ -39,9 +39,9 @@ export default function TrainerCard() {
           backgroundImage: "url('/joseph.png')",
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          width: "100%",
-          height: 520,
+          backgroundPosition: "bottom center",
+          minHeight: 420,
+          position: "relative",
         }}
       />
     </Box>
