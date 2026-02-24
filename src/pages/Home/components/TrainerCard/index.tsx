@@ -15,6 +15,7 @@ export default function TrainerCard() {
         justifyContent: "space-between",
         paddingX: 4,
         paddingTop: 6,
+        boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
       }}
     >
       <Box>
@@ -42,6 +43,11 @@ export default function TrainerCard() {
           backgroundPosition: "bottom center",
           minHeight: 420,
           position: "relative",
+          "&:hover": {
+            cursor: "pointer",
+            transform: "scale(1.01)",
+            transition: "transform 0.2s",
+          },
         }}
       />
     </Box>

@@ -13,7 +13,7 @@ export default function Home() {
         backgroundImage: "url('/background.png')",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
+        backgroundSize: "100% 120%",
         backgroundColor: "#000",
         paddingX: 4,
       }}
@@ -33,7 +33,13 @@ export default function Home() {
           component="img"
           src={logoPokemon}
           alt="Logo Pokemon"
-          sx={{ width: { xs: 160, md: 240 } }}
+          sx={{ 
+            width: { xs: 160, md: 240 },
+            "&:hover": {
+              transform: "scale(1.02)",
+              transition: "transform 0.2s",
+            },
+          }}
         />
       </Box>
 
